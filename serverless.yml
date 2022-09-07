@@ -4,12 +4,11 @@ service: aulaserverless
 frameworkVersion: '3'
 
 custom:
-  relatoriosBucket: '${self:service}-${self:provider.stage}-relatorios-bucket-paulo-${self:provider.region}'
+  relatoriosBucket: '${self:service}-${self:provider.stage}-relatorios-bucket-leonardo-${self:provider.region}'
   folder_bucket: '${param:folder_bucket, "relatorios"}/'
 
 provider:
   name: aws
-  profile: aluno_1
   runtime: nodejs14.x
   stage: ${opt:stage, 'test'}
   region: ${opt:region, 'us-east-2'}
