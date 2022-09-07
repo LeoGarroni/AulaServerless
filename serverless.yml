@@ -44,7 +44,6 @@ functions:
             - suffix: .xlsx
           existing: true
     
-
 resources:
   Resources:
     RelatoriosBucket:
